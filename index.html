@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3 class="display-4 text-center text-danger">save & search</h3>
+    <div class="container-fluid">
+        <div class="p-2 text-center my-5">
+            <input type="text" name="" id="search" class="form-control w-50 mx-auto"placeholder="Search an Item">
+
+            <form id="Add-Form"class="mt-3 ">
+            <input type="text" name="searchTitle" id="" class="form-control w-50 mx-auto"placeholder="Add an Item">
+            <button class="btn btn-primary my-4">Add product</button><br>
+            <label>
+                <input type="checkbox" name="chek"id="chek" class="form-check text-center mx-auto mt-4">show by stock
+            </label><br>
+            
+            <hr>
+            </form>
+            <select name="" id="sellected">
+              <option value="byEdited">byEdited</option>
+              <option value="byCreated">byCreated</option>
+            </select>
+            <div id="products"></div>
+        </div>
+    </div>
+  <script src="moment.js"></script>
+  <script src="jalali-moment.js"></script>
+  <script src="uuid.js"></script>
+  <script src="function.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

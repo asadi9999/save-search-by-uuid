@@ -1,0 +1,80 @@
+#products.show{
+    background-color: #8d89fd;
+    opacity: 0.8;
+    visibility: visible;
+    border-radius: 12px;
+    box-shadow: 12px 12px 8px 0;
+    color: #000;
+    padding: 10px;
+    width: 50%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#products{
+    background-color: #dddd;
+   visibility: hidden;
+    opacity: 1;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center
+}
+#products > p:hover{
+    cursor: pointer;
+}
+#products > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 1px solid;
+
+}
+@font-face {
+    font-family: vazirfont;
+    src: url('font/Vazirmatn-Light.ttf');
+}
+body{
+    font-family: vazirfont;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#products.show > a:hover{
+    text-decoration: none;
+    color: #0105f8;
+    text-shadow: #dddd;
+}
+#products.show div button{
+    width: 97px;
+    height: 33px;
+    margin: 12px;
+}
+#products.show div{
+    align-items: center;
+}
+#sellected{
+    background-color: #8d89fd;
+    width: 150px;
+    height: 55px;
+    border-radius: 6px;
+    box-shadow: 5px 4px 3px #595858;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px auto;
+}
+#sellected:hover{
+    cursor: pointer;
+    transition: all 0.5ms;
+    box-shadow: 5px 8px 3px #1b1b1b;
+    
+}
+#selected > option{
+    
+}
+#sellected > option:nth-child(2){
+    font-weight: bold;
+    text-shadow: 3px 4px 5px #000;
+}
